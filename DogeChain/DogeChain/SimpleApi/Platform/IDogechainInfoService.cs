@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace DogeChain.Platform
+namespace DogeChain.SimpleApi.Platform
 {
     /// <summary>
     /// Service for getting information about platform

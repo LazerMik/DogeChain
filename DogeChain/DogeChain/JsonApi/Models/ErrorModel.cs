@@ -1,4 +1,4 @@
-﻿namespace DogeChain.Transactions.Models
+﻿namespace DogeChain.JsonApi.Models
 {
     /// <summary>
     /// Error model
@@ -9,10 +9,5 @@
         /// Error description
         /// </summary>
         public string Error { get; set; }
-
-        /// <summary>
-        /// Is success
-        /// </summary>
-        public int Success { get; set; }
     }
 }

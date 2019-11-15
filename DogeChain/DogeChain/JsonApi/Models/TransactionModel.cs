@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace DogeChain.Transactions.Models
+namespace DogeChain.JsonApi.Models
 {
     /// <summary>
     /// Successful response model
@@ -12,11 +12,6 @@ namespace DogeChain.Transactions.Models
         /// Transaction Info
         /// </summary>
         public Transaction Transaction { get; set; }
-        
-        /// <summary>
-        /// Is success
-        /// </summary>
-        public int Success { get; set; }
     }
 
     /// <summary>

@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace DogeChain.Platform
+namespace DogeChain.SimpleApi.Platform
 {
     ///<inheritdoc/>>
     public class DogechainInfoService : IDogechainInfoService

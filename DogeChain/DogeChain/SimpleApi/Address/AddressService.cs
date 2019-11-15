@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace DogeChain.Address
+namespace DogeChain.SimpleApi.Address
 {
     ///<inheritdoc/>>
     public class AddressService : IAddressService

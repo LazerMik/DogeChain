@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using DogeChain.Transactions.Models;
+using DogeChain.JsonApi.Models;
 
-namespace DogeChain.Transactions
+namespace DogeChain.JsonApi.Transactions
 {
     /// <summary>
     /// Service for transaction processing

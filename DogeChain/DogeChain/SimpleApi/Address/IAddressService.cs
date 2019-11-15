@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace DogeChain.Address
+namespace DogeChain.SimpleApi.Address
 {
     /// <summary>
     /// Service for operations with address

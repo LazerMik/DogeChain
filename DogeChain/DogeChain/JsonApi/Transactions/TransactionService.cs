@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using DogeChain.Transactions.Models;
+using DogeChain.JsonApi.Models;
 using Newtonsoft.Json;
 
-namespace DogeChain.Transactions
+namespace DogeChain.JsonApi.Transactions
 {
     ///<inheritdoc/>>
     public class TransactionService : ITransactionService
