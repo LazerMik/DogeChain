@@ -21,7 +21,7 @@ namespace DogeChain.JsonApi.Transactions
         }
 
         ///<inheritdoc/>>
-        public async Task<ResponseModel> GetTransaction(string transactionHash)
+        public async Task<ResponseModel> GetTransactionAsync(string transactionHash)
         {
             using (var response = await _httpClient.GetAsync("transaction/"+transactionHash))
             {

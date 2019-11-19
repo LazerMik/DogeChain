@@ -21,7 +21,7 @@ namespace DogeChain.SimpleApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<string> GetBalance(string address)
+        public async Task<string> GetBalanceAsync(string address)
         {
             using (var response = await _httpClient.GetAsync("addressbalance/" + address))
             {
@@ -30,7 +30,7 @@ namespace DogeChain.SimpleApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<string> AddressToHash(string address)
+        public async Task<string> AddressToHashAsync(string address)
         {
             using (var response = await _httpClient.GetAsync("addresstohash/" + address))
             {
@@ -39,7 +39,7 @@ namespace DogeChain.SimpleApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<string> AddressValidation(string address)
+        public async Task<string> AddressValidationAsync(string address)
         {
             using (var response = await _httpClient.GetAsync("checkaddress/" + address))
             {
@@ -48,7 +48,7 @@ namespace DogeChain.SimpleApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<string> DecodeAddress(string address)
+        public async Task<string> DecodeAddressAsync(string address)
         {
             using (var response = await _httpClient.GetAsync("decode_address/" + address))
             {
@@ -57,7 +57,7 @@ namespace DogeChain.SimpleApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<string> GetRecievedByAddress(string address)
+        public async Task<string> GetRecievedByAddressAsync(string address)
         {
             using (var response = await _httpClient.GetAsync("getreceivedbyaddress/" + address))
             {
@@ -66,7 +66,7 @@ namespace DogeChain.SimpleApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<string> GetSentByAddress(string address)
+        public async Task<string> GetSentByAddressAsync(string address)
         {
             using (var response = await _httpClient.GetAsync("getsentbyaddress/" + address))
             {

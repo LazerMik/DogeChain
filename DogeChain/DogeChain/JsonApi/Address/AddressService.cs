@@ -21,7 +21,7 @@ namespace DogeChain.JsonApi.Address
         }
         
         ///<inheritdoc/>>
-        public async Task<ResponseModel> GetBalance(string address)
+        public async Task<ResponseModel> GetBalanceAsync(string address)
         {
             using (var response = await _httpClient.GetAsync(address))
             {
@@ -41,7 +41,7 @@ namespace DogeChain.JsonApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<ResponseModel> GetRecievedByAddress(string address)
+        public async Task<ResponseModel> GetRecievedByAddressAsync(string address)
         {
             using (var response = await _httpClient.GetAsync(address))
             {
@@ -61,7 +61,7 @@ namespace DogeChain.JsonApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<ResponseModel> GetSentByAddress(string address)
+        public async Task<ResponseModel> GetSentByAddressAsync(string address)
         {
             using (var response = await _httpClient.GetAsync(address))
             {
@@ -81,7 +81,7 @@ namespace DogeChain.JsonApi.Address
         }
 
         ///<inheritdoc/>>
-        public async Task<ResponseModel> GetUnspentOutputs(string address)
+        public async Task<ResponseModel> GetUnspentOutputsAsync(string address)
         {
             using (var response = await _httpClient.GetAsync(address))
             {
@@ -101,7 +101,7 @@ namespace DogeChain.JsonApi.Address
         }
 
         ///<inheritdoc/>>
-        public Task<ResponseModel> GetAddressQrCode(string address)
+        public Task<ResponseModel> GetAddressQrCodeAsync(string address)
         {
             throw new NotImplementedException();
         }

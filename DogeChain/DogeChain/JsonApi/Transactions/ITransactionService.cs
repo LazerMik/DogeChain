@@ -13,6 +13,6 @@ namespace DogeChain.JsonApi.Transactions
         /// </summary>
         /// <param name="transactionHash">Transaction Hash</param>
         /// <returns></returns>
-        Task<ResponseModel> GetTransaction(string transactionHash);
+        Task<ResponseModel> GetTransactionAsync(string transactionHash);
     }
 }

@@ -11,18 +11,18 @@ namespace DogeChain.SimpleApi.Platform
         /// Get current block count
         /// </summary>
         /// <returns></returns>
-        Task<string> GetBlockCount();
+        Task<string> GetBlockCountAsync();
 
         /// <summary>
         /// Get last solved block's difficulty
         /// </summary>
         /// <returns></returns>
-        Task<string> GetCurrentDifficulty();
+        Task<string> GetCurrentDifficultyAsync();
 
         /// <summary>
         /// Get the amount of currency ever mined
         /// </summary>
         /// <returns></returns>
-        Task<string> GetTotalMined();
+        Task<string> GetTotalMinedAsync();
     }
 }

@@ -20,7 +20,7 @@ namespace DogeChain.SimpleApi.Platform
         }
         
         ///<inheritdoc/>>
-        public async Task<string> GetBlockCount()
+        public async Task<string> GetBlockCountAsync()
         {
             using (var response = await _httpClient.GetAsync("getblockcount"))
             {
@@ -29,7 +29,7 @@ namespace DogeChain.SimpleApi.Platform
         }
 
         ///<inheritdoc/>>
-        public async Task<string> GetCurrentDifficulty()
+        public async Task<string> GetCurrentDifficultyAsync()
         {
             using (var response = await _httpClient.GetAsync("getdifficulty"))
             {
@@ -38,7 +38,7 @@ namespace DogeChain.SimpleApi.Platform
         }
 
         ///<inheritdoc/>>
-        public async Task<string> GetTotalMined()
+        public async Task<string> GetTotalMinedAsync()
         {
             using (var response = await _httpClient.GetAsync("totalbc"))
             {

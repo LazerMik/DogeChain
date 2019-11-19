@@ -13,34 +13,34 @@ namespace DogeChain.JsonApi.Address
         /// </summary>
         /// <param name="address">Address</param>
         /// <returns></returns>
-        Task<ResponseModel> GetBalance(string address);
+        Task<ResponseModel> GetBalanceAsync(string address);
 
         /// <summary>
         /// Returns total amount of received coins of a given address.
         /// </summary>
         /// <param name="address">Address</param>
         /// <returns></returns>
-        Task<ResponseModel> GetRecievedByAddress(string address);
+        Task<ResponseModel> GetRecievedByAddressAsync(string address);
 
         /// <summary>
         /// Returns total amount of sent coins of a given address.
         /// </summary>
         /// <param name="address">Address</param>
         /// <returns></returns>
-        Task<ResponseModel> GetSentByAddress(string address);
+        Task<ResponseModel> GetSentByAddressAsync(string address);
 
         /// <summary>
         /// Returns unspent outputs for a given address.
         /// </summary>
         /// <param name="address">Address</param>
         /// <returns></returns>
-        Task<ResponseModel> GetUnspentOutputs(string address);
+        Task<ResponseModel> GetUnspentOutputsAsync(string address);
 
         /// <summary>
         /// Generates QR-code for given address.
         /// </summary>
         /// <param name="address">Address</param>
         /// <returns></returns>
-        Task<ResponseModel> GetAddressQrCode(string address);
+        Task<ResponseModel> GetAddressQrCodeAsync(string address);
     }
 }
