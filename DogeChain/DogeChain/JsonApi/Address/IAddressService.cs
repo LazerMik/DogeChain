@@ -28,19 +28,5 @@ namespace DogeChain.JsonApi.Address
         /// <param name="address">Address</param>
         /// <returns></returns>
         Task<ResponseModel> GetSentByAddressAsync(string address);
-
-        /// <summary>
-        /// Returns unspent outputs for a given address.
-        /// </summary>
-        /// <param name="address">Address</param>
-        /// <returns></returns>
-        Task<ResponseModel> GetUnspentOutputsAsync(string address);
-
-        /// <summary>
-        /// Generates QR-code for given address.
-        /// </summary>
-        /// <param name="address">Address</param>
-        /// <returns></returns>
-        Task<ResponseModel> GetAddressQrCodeAsync(string address);
     }
 }

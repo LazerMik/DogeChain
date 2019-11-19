@@ -23,7 +23,7 @@ namespace DogeChain.JsonApi.Address
         ///<inheritdoc/>>
         public async Task<ResponseModel> GetBalanceAsync(string address)
         {
-            using (var response = await _httpClient.GetAsync(address))
+            using (var response = await _httpClient.GetAsync("balance/" + address))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -43,7 +43,7 @@ namespace DogeChain.JsonApi.Address
         ///<inheritdoc/>>
         public async Task<ResponseModel> GetRecievedByAddressAsync(string address)
         {
-            using (var response = await _httpClient.GetAsync(address))
+            using (var response = await _httpClient.GetAsync("received/" + address))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -63,7 +63,7 @@ namespace DogeChain.JsonApi.Address
         ///<inheritdoc/>>
         public async Task<ResponseModel> GetSentByAddressAsync(string address)
         {
-            using (var response = await _httpClient.GetAsync(address))
+            using (var response = await _httpClient.GetAsync("sent/"+address))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -78,32 +78,6 @@ namespace DogeChain.JsonApi.Address
                     return model;
                 }
             }
-        }
-
-        ///<inheritdoc/>>
-        public async Task<ResponseModel> GetUnspentOutputsAsync(string address)
-        {
-            using (var response = await _httpClient.GetAsync(address))
-            {
-                if (response.IsSuccessStatusCode)
-                {
-                    var json = await response.Content.ReadAsStringAsync();
-                    var model = JsonConvert.DeserializeObject<UnspentOutputModel>(json);
-                    return model;
-                }
-                else
-                {
-                    var json = await response.Content.ReadAsStringAsync();
-                    var model = JsonConvert.DeserializeObject<ErrorModel>(json);
-                    return model;
-                }
-            }
-        }
-
-        ///<inheritdoc/>>
-        public Task<ResponseModel> GetAddressQrCodeAsync(string address)
-        {
-            throw new NotImplementedException();
         }
     }
 }
