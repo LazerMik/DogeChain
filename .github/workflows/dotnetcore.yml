@@ -16,3 +16,6 @@ jobs:
     - name: Build with dotnet
       working-directory: DogeChain/DogeChain
       run: dotnet build --configuration Release
+    - name: Test with NUnit
+      working-directory: DogeChain/DogeChain.Tests
+      run: dotnet test
